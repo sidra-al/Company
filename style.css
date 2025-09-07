@@ -19,7 +19,7 @@ nav {
     background-color: #19335f;
     position: fixed;
     width: 100%;
-    height: 70px;
+    height: 90px;
     z-index: 5;
     top: 0;
 }
@@ -306,11 +306,81 @@ summary::after {
 .cont-skills2 {
     width: 500px;
     height: 400px;
-    background-color: #39517b;
+    background-color: #fafcff;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
 }
 
 .p-skills2 {
     padding: 15px 0;
+}
+
+.skills2-line-tall {
+    height: 10px;
+    width: 400px;
+    background-color: #d5d9e0;
+}
+
+.skills2-line-short {
+    height: 10px;
+    width: 300px;
+    background-color: #4abae0;
+    animation: slideIn 2s ease-out forwards;
+}
+
+.short1 {
+    --target-width: 300px;
+}
+
+.short2 {
+    --target-width: 200px;
+}
+
+.short3 {
+    --target-width: 150px;
+}
+
+.short4 {
+    --target-width: 100px;
+}
+
+.short5 {
+    --target-width: 50px;
+}
+
+.short6 {
+    --target-width: 250px;
+}
+
+.percentage {
+    margin-left: 80%;
+    color: #19335f;
+    font-weight: bold;
+}
+
+.percentage2 {
+    color: #19335f;
+    font-weight: bold;
+}
+
+.span-skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@keyframes slideIn {
+    from {
+        width: 0;
+        /* يبدأ من العرض 0 */
+    }
+    to {
+        width: var(--target-width);
+        /* يصل إلى العرض المحدد */
+    }
 }
 
 
